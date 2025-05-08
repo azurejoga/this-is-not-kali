@@ -46,6 +46,7 @@ This script is designed for penetration testers, CTF enthusiasts, or researchers
 2. (Optional) Create and activate a virtual environment:
 
    ```bash
+   ```
    python3 -m venv venv
    source venv/bin/activate
    ```
@@ -53,6 +54,7 @@ This script is designed for penetration testers, CTF enthusiasts, or researchers
 3. Run the script:
 
    ```bash
+   ```
    python3 this-is-not-kali.py
    ```
 
@@ -65,11 +67,11 @@ This script is designed for penetration testers, CTF enthusiasts, or researchers
 Simply run the script without arguments to launch the interactive menu:
 
 ```bash
+```
 python3 this-is-not-kali.py
 ```
 
 You will see a numbered menu to:
-
 ```
 1. Install in interactive mode (ask per tool)
 2. Install all tools without asking
@@ -91,6 +93,7 @@ You will see a numbered menu to:
 #### General format:
 
 ```bash
+```
 python3 this-is-not-kali.py [-options]
 ```
 
@@ -108,6 +111,7 @@ python3 this-is-not-kali.py [-options]
 #### Example:
 
 ```bash
+```
 # Install all tools from default metapackage
 python3 this-is-not-kali.py --all
 
@@ -131,6 +135,7 @@ python3 this-is-not-kali.py --uninstall installed.log
 ### Export .deb Packages
 
 ```bash
+```
 python3 this-is-not-kali.py
 # Choose option 9 from the menu
 ```
@@ -140,6 +145,7 @@ This downloads `.deb` packages into `deb_packages/` and compresses them as `offl
 ### Generate Offline Installer
 
 ```bash
+```
 python3 this-is-not-kali.py
 # Choose option 10 from the menu
 ```
@@ -179,6 +185,3 @@ This script **adds and removes** the Kali Linux repository temporarily. Use it r
 Pull requests are welcome! Feel free to open issues for bugs, enhancements, or feature suggestions.
 
 * [linkedin](https://linkedin.com/in/juan-mathews-rebello-santos-/)
-
----
-
