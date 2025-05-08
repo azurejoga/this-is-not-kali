@@ -62,11 +62,11 @@ This script is designed for penetration testers, CTF enthusiasts or researchers 
 Run the script without arguments to start the interactive menu:
 
 Python3 this-is-not-kali.py
-`` `
+
 
 You will see a numbered menu:
 
-`` `
+
 1. Install in interactive mode (asking by tool)
 2. Install all tools without asking
 3. Search and install by keyword
@@ -78,7 +78,7 @@ You will see a numbered menu:
 9. Export Packages .DEB For Offline Installation
 10. Generate Offline Installation Script
 0.
-`` `
+
 
 ---
 
@@ -86,9 +86,8 @@ You will see a numbered menu:
 
 #### General format:
 
-`` `Bash
 Python3 this-is-not-kali.py [Options]
-`` `
+
 
 #### Options:
 
@@ -103,7 +102,7 @@ Python3 this-is-not-kali.py [Options]
 
 #### Example:
 
-`` `Bash
+
 # Install all standard metapacote tools
 python3 this-is-not-kali.py--all
 
@@ -112,7 +111,7 @@ Python3 this-is-not-kali.py -search wifi
 
 # Uninstall all previously installed tools
 python3 this-is-not-kali.py -uninstall installled.log
-`` `
+
 
 ---
 
@@ -120,19 +119,19 @@ python3 this-is-not-kali.py -uninstall installled.log
 
 ### Export Packages .Deb
 
-`` `Bash
+
 Python3 this-is-not-kali.py
 # Choose option 9 from the menu
-`` `
+
 
 This will download the `.deb` packages to the` Deb_Packages/`directory and compress them as` offline_tools.tar.gz`.
 
 ### Generate offline installer
 
-`` `Bash
+
 Python3 this-is-not-kali.py
 # Choose option 10 from the menu
-`` `
+
 
 This will create a `install_offline script.SH` can install all `.deb` files in offline environments.
 
