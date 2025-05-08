@@ -38,21 +38,29 @@ This script is designed for penetration testers, CTF enthusiasts or researchers 
 1. Clone the repository:
 
    `` `Bash
+
    git clone https://github.com/azurejoga/this-not-kali.git
-   cd this-sy-not-kali
+
+   cd this-is-not-kali
+
    `` `
 
 2. * (Optional) * Create and enable a virtual environment:
 
    `` `Bash
+
    Python3 -m Venv Venv
-   SOURCE VENV/BIN/Active
+
+   SOURCE VENV/BIN/activate
+
    `` `
 
 3. Run the script:
 
    `` `Bash
-   Python3 this-É-Not-kali.py
+
+   Python3 this-is-not-kali.py
+
    `` `
 
 ---
@@ -64,7 +72,9 @@ This script is designed for penetration testers, CTF enthusiasts or researchers 
 Run the script without arguments to start the interactive menu:
 
 `` `Bash
-Python3 this-É-Not-kali.py
+
+Python3 this-is-not-kali.py
+
 `` `
 
 You will see a numbered menu:
@@ -90,7 +100,9 @@ You will see a numbered menu:
 #### General format:
 
 `` `Bash
-Python3 this-É-Not-kali.py [Options]
+
+Python3 this-is-not-kali.py [Options]
+
 `` `
 
 #### Options:
@@ -107,20 +119,15 @@ Python3 this-É-Not-kali.py [Options]
 #### Example:
 
 `` `Bash
+
 # Install all standard metapacote tools
-python3 this-É-not-kali.py--all
+python3 this-is-not-kali.py--all
 
 # Search for WiFi -related tools
-python3 this-É-not-kali.py-search wifi
-
-# Export list of installed tools
-python3 this-not-kali.py---export my_ferramentas.json
-
-# Restore tools from a log file
-python3 this-IS-NOT-KALI.PY-RESTORE INSTALLED.LOG
+Python3 this-is-not-kali.py -search wifi
 
 # Uninstall all previously installed tools
-python3 this-É-not-kali.py-uninstall installled.log
+python3 this-is-not-kali.py -uninstall installled.log
 `` `
 
 ---
@@ -130,7 +137,8 @@ python3 this-É-not-kali.py-uninstall installled.log
 ### Export Packages .Deb
 
 `` `Bash
-Python3 this-É-Not-kali.py
+
+Python3 this-is-not-kali.py
 # Choose option 9 from the menu
 `` `
 
@@ -139,7 +147,9 @@ This will download the `.deb` packages to the` Deb_Packages/`directory and compr
 ### Generate offline installer
 
 `` `Bash
-Python3 this-É-Not-kali.py
+
+Python3 this-is-not-kali.py
+
 # Choose option 10 from the menu
 `` `
 
@@ -151,7 +161,7 @@ This will create a `install_offline script.SH` can install all `.deb` files in o
 
 | File | Purpose |
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| `Installed.log` | Successful Tools |
+| `Installed.log` | Successful Tools installed |
 | `skipped.log` | Tools ignored during interactive mode |
 | `my-tools.json` | List of Exported Tools (for repayment or sharing) |
 | `Deb_Packages/` | Folder containing `.deb` packages for offline use |
@@ -176,5 +186,6 @@ This script ** adds and temporarily removes the Kali Linux repository. Use it re
 ## 🤝 Contributing
 
 Pull Requests are welcome! Feel free to open bugs for bugs, improvements or suggestions for resource.
+
 * [LinkedIn – Juan Mathews Rebello Santos](https://linkedin.com/in/juan-mathews-rebello-santos-/)
 
