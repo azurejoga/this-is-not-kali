@@ -38,25 +38,23 @@ This script is designed for penetration testers, CTF enthusiasts, or researchers
 ## 🛠 Installation
 
 1. Clone the repository:
-   ```bash
+  bash
    git clone https://github.com/azurejoga/this-is-not-kali.git
    cd this-is-not-kali
 ````
 
 2. (Optional) Create and activate a virtual environment:
 
-   ```bash
-   ```
+  bash
    python3 -m venv venv
    source venv/bin/activate
-   ```
+```
 
 3. Run the script:
 
-   ```bash
-   ```
-   python3 this-is-not-kali.py
-   ```
+  bash
+     python3 this-is-not-kali.py
+  ```
 
 ---
 
@@ -67,7 +65,6 @@ This script is designed for penetration testers, CTF enthusiasts, or researchers
 Simply run the script without arguments to launch the interactive menu:
 
 ```bash
-```
 python3 this-is-not-kali.py
 ```
 
@@ -93,7 +90,6 @@ You will see a numbered menu to:
 #### General format:
 
 ```bash
-```
 python3 this-is-not-kali.py [-options]
 ```
 
@@ -111,7 +107,6 @@ python3 this-is-not-kali.py [-options]
 #### Example:
 
 ```bash
-```
 # Install all tools from default metapackage
 python3 this-is-not-kali.py --all
 
@@ -135,7 +130,6 @@ python3 this-is-not-kali.py --uninstall installed.log
 ### Export .deb Packages
 
 ```bash
-```
 python3 this-is-not-kali.py
 # Choose option 9 from the menu
 ```
@@ -145,7 +139,6 @@ This downloads `.deb` packages into `deb_packages/` and compresses them as `offl
 ### Generate Offline Installer
 
 ```bash
-```
 python3 this-is-not-kali.py
 # Choose option 10 from the menu
 ```
