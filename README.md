@@ -1,180 +1,180 @@
-# 🎯 THIS IS NOT KALI! – Selective Kali Linux Tool Installer
+# 🎯 This is not Kali! - Kali Linux tool selective installer
 
-> A powerful and flexible script to selectively install Kali Linux tools on **non-Kali Debian-based systems**.
+> A powerful and flexible script to selectively install Kali Linux tools in ** Debian -based systems that are not Kali **.
 
 ---
 
 ## 🧭 Overview
 
-**THIS IS NOT KALI!** is a Python-based command-line tool that allows you to:
-- Install individual or all tools from any Kali metapackage (like `kali-linux-everything`)
-- Interactively choose tools to install
-- Export and import installed tool lists
-- Download `.deb` packages for offline installations
-- Generate a complete offline installer script
-- Remove the Kali repository after use to preserve system integrity
+** this is not kali! ** It is a python -based command line tool that allows:
 
-This script is designed for penetration testers, CTF enthusiasts, or researchers who want to leverage the power of Kali Linux tools without switching from their current Debian/Ubuntu environment.
+* Install individually or all tools of any Kali Metapacote (such as `Kali-Linux-Everything`)
+* Interactively choose the tools to be installed
+* Export and import tools of installed tools
+* Download Packages `.deb` For offline installations
+* Generate a complete offline installer script
+* Remove the Kali repository after use to preserve system integrity
 
----
+This script is designed for penetration testers, CTF enthusiasts or researchers who want to take advantage of the power of Kali Linux tools without changing their current environment Debian/Ubuntu.---
 
-## 🚀 Features
+## 🚀 features
 
-| Feature | Description |
-|--------|-------------|
-| ✅ Interactive Tool Installation | Choose tools one-by-one during install |
-| ✅ Full Install Mode | Automatically install all available tools |
-| 🔍 Keyword Search | Search for specific tools and choose to install them |
-| 📦 Export Installed Tools | Save the list of installed tools in `.json` format |
-| ♻ Restore Tools | Reinstall previously selected tools from log |
-| ❌ Uninstall Tools | Cleanly remove all tools previously installed |
-| 🧪 Kali Repo Handling | Add/remove Kali Linux repository with key management |
-| 💾 Offline Package Export | Download all `.deb` packages and archive them |
-| 📜 Offline Installer Generator | Create a self-contained shell script for offline setup |
-| 🧠 Command-Line Support | Use command-line flags instead of menu interface |
-
+| RESOURCE | Description |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| ✅ Interactive installation | Choose tools one by one during installation |
+| ✅ Complete installation mode | Automatically installs all available tools |
+| 🔍 Keyword Search | Search specific tools and choose to install them |
+| 📦 Export tools | Save the list of tools installed in `.json` |
+| ♻ Restore tools | Reinstall tools previously selected from log |
+| ❌ Uninstall tools | Remove all previously installed tools |
+| 🧪 Repository Management | Add/Remove Kali Repository with Key Management |
+| 💾 Export offline packages | Download all `.deb` packages and archive them |
+| 📜 Generate offline installer | Create an autonomous shell script for offline configuration |
+| 🧠 Command Line Support | Use command line flags instead of the menu interface |
 ---
 
 ## 🛠 Installation
 
 1. Clone the repository:
-  bash
-   git clone https://github.com/azurejoga/this-is-not-kali.git
-   cd this-is-not-kali
-````
 
-2. (Optional) Create and activate a virtual environment:
+   `` `Bash
+   git clone https://github.com/azurejoga/this-not-kali.git
+   cd this-sy-not-kali
+   `` `
 
-  bash
-   python3 -m venv venv
-   source venv/bin/activate
-```
+2. * (Optional) * Create and enable a virtual environment:
+
+   `` `Bash
+   Python3 -m Venv Venv
+   SOURCE VENV/BIN/Active
+   `` `
 
 3. Run the script:
 
-  bash
-     python3 this-is-not-kali.py
-  ```
+   `` `Bash
+   Python3 this-É-Not-kali.py
+   `` `
 
 ---
 
-## 🧑‍💻 Usage
+## 🧑‍💻 Use
 
-### 📋 Interactive Menu Mode
+### 📋 Interactive Mode (Menu)
 
-Simply run the script without arguments to launch the interactive menu:
+Run the script without arguments to start the interactive menu:
 
-```bash
-python3 this-is-not-kali.py
-```
+`` `Bash
+Python3 this-É-Not-kali.py
+`` `
 
-You will see a numbered menu to:
-```
-1. Install in interactive mode (ask per tool)
+You will see a numbered menu:
+
+`` `
+1. Install in interactive mode (asking by tool)
 2. Install all tools without asking
 3. Search and install by keyword
-4. Export installed tools list
-5. Restore tools from installed.log
-6. Uninstall tools from installed.log
+4. Export list of installed tools
+5. Restore Installed.log tools
+6. Uninstall Installed.log tools
 7. Remove Kali repository
-8. Import and show tool list from file
-9. Export .deb packages for offline installation
-10. Generate offline installation script
-0. Exit
-```
+8. Import and show file tool list
+9. Export Packages .DEB For Offline Installation
+10. Generate Offline Installation Script
+0.
+`` `
 
 ---
 
-### ⚙ Command-Line Mode
+### ⚙ Command Line Mode
 
 #### General format:
 
-```bash
-python3 this-is-not-kali.py [-options]
-```
+`` `Bash
+Python3 this-É-Not-kali.py [Options]
+`` `
 
 #### Options:
 
-| Argument               | Description                                                             |
-| ---------------------- | ----------------------------------------------------------------------- |
-| `--all`                | Install all Kali tools from the specified metapackage                   |
-| `--search <keyword>`   | Search for tools matching the keyword and install interactively         |
-| `--export <file>`      | Export the list of installed tools to a JSON file                       |
-| `--restore <file>`     | Restore and reinstall tools from the specified log or JSON file         |
-| `--uninstall <file>`   | Uninstall tools listed in the specified file                            |
-| `--metapackage <name>` | Specify a different Kali metapackage (default: `kali-linux-everything`) |
+| Argument | Description |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| `---all` | Install all specified metapote tools |
+| `-Search <Word>` | Search tools corresponding to the keyword and installs interactively |
+| `--Export <File>` | Export the list of tools installed to a JSON file |
+| `-Restore <File>` | Restores and Reinstall Log or JSON File Tools specified |
+| `-uninstall <file>` | Uninstall tools listed in the specified file |
+| `--metapackage <name>` | Specifies a different Kali metapacote (default: `kali-linux-eurything`) |
 
 #### Example:
 
-```bash
-# Install all tools from default metapackage
-python3 this-is-not-kali.py --all
+`` `Bash
+# Install all standard metapacote tools
+python3 this-É-not-kali.py--all
 
-# Search for tools related to 'wifi'
-python3 this-is-not-kali.py --search wifi
+# Search for WiFi -related tools
+python3 this-É-not-kali.py-search wifi
 
-# Export installed tools list
-python3 this-is-not-kali.py --export my_tools.json
+# Export list of installed tools
+python3 this-not-kali.py---export my_ferramentas.json
 
-# Restore tools from log file
-python3 this-is-not-kali.py --restore installed.log
+# Restore tools from a log file
+python3 this-IS-NOT-KALI.PY-RESTORE INSTALLED.LOG
 
 # Uninstall all previously installed tools
-python3 this-is-not-kali.py --uninstall installed.log
-```
+python3 this-É-not-kali.py-uninstall installled.log
+`` `
 
 ---
 
-## 📡 Offline Features
+## 📡 Offline features
 
-### Export .deb Packages
+### Export Packages .Deb
 
-```bash
-python3 this-is-not-kali.py
+`` `Bash
+Python3 this-É-Not-kali.py
 # Choose option 9 from the menu
-```
+`` `
 
-This downloads `.deb` packages into `deb_packages/` and compresses them as `offline_tools.tar.gz`.
+This will download the `.deb` packages to the` Deb_Packages/`directory and compress them as` offline_tools.tar.gz`.
 
-### Generate Offline Installer
+### Generate offline installer
 
-```bash
-python3 this-is-not-kali.py
+`` `Bash
+Python3 this-É-Not-kali.py
 # Choose option 10 from the menu
-```
+`` `
 
-This creates a `install_offline.sh` script which can install all `.deb` files in offline environments.
-
----
-
-## 📁 Log & Configuration Files
-
-| File                   | Purpose                                           |
-| ---------------------- | ------------------------------------------------- |
-| `installed.log`        | Tools successfully installed                      |
-| `skipped.log`          | Tools skipped during interactive mode             |
-| `my-tools.json`        | Exported tool list (for re-import or sharing)     |
-| `deb_packages/`        | Folder containing `.deb` packages for offline use |
-| `offline_tools.tar.gz` | Compressed archive for offline installation       |
+This will create a `install_offline script.SH` can install all `.deb` files in offline environments.
 
 ---
 
-## ⚠ Disclaimer
+## 📁 Log and configuration files
 
-This script **adds and removes** the Kali Linux repository temporarily. Use it responsibly to avoid unwanted system behavior. It is recommended to remove the Kali repo after installing your desired tools.
+| File | Purpose |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| `Installed.log` | Successful Tools |
+| `skipped.log` | Tools ignored during interactive mode |
+| `my-tools.json` | List of Exported Tools (for repayment or sharing) |
+| `Deb_Packages/` | Folder containing `.deb` packages for offline use |
+| `offline_tools.tar.gz` | Compressed File for Offline Installation |
 
 ---
 
-## 🧪 Tested On
+## ⚠ Warning
+
+This script ** adds and temporarily removes the Kali Linux repository. Use it responsibly to avoid unwanted behavior in the system. It is recommended to remove the Kali repository after installing the desired tools.
+
+---
+
+## 🧪 Tested in
 
 * Debian 12
-* Ubuntu 22.04 LTS
+* Ubuntu 22.04 lts
 * Linux Mint
 
 ---
 
 ## 🤝 Contributing
 
-Pull requests are welcome! Feel free to open issues for bugs, enhancements, or feature suggestions.
+Pull Requests are welcome! Feel free to open bugs for bugs, improvements or suggestions for resource.
+* [LinkedIn – Juan Mathews Rebello Santos](https://linkedin.com/in/juan-mathews-rebello-santos-/)
 
-* [linkedin](https://linkedin.com/in/juan-mathews-rebello-santos-/)
