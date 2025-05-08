@@ -35,25 +35,23 @@ This script is designed for penetration testers, CTF enthusiasts or researchers 
 
 ## 🛠 Installation
 
-1. Clone the repository:
+### 1. Clone the repository:
 
-   `` `Bash
    git clone https://github.com/azurejoga/this-not-kali.git
+
    cd this-is-not-kali
-   `` `
 
-2. * (Optional) * Create and enable a virtual environment:
+### 2. * (Optional) * Create and enable a virtual environment:
 
-   `` `Bash
    Python3 -m Venv Venv
+
    SOURCE VENV/BIN/activate
-   `` `
 
-3. Run the script:
+### 3. Run the script:
 
-   `` `Bash
    Python3 this-is-not-kali.py
-   `` `
+
+
 
 ---
 
@@ -63,7 +61,6 @@ This script is designed for penetration testers, CTF enthusiasts or researchers 
 
 Run the script without arguments to start the interactive menu:
 
-`` `Bash
 Python3 this-is-not-kali.py
 `` `
 
